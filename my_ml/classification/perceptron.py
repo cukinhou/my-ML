@@ -32,7 +32,7 @@ class Perceptron(Classifier):
         :type y_train: list
         :param l_rate: degree in which  weights are corrected in each training
         iteration.
-        :param n_iter: number of times to iterate throug the training examples
+        :param n_iter: number of times to iterate through the training examples
         while updating weights
         :return: the weights that fit the input data
         :rtype: list
