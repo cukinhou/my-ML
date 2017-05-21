@@ -1,14 +1,14 @@
 from distutils.core import setup
 
 setup(
-    name='My ML library',
+    name='MyML',
     version='1.0.0',
     author='J. Nistal Hurle',
     author_email='j.nistalhurle@gmail.com',
-    packages=['myML'],
+    packages=['my_ml', 'tests'],
     scripts=[],
-    url='http://pypi.python.org/pypi/myML/',
+    url='http://pypi.python.org/pypi/MyML/',
     license='LICENSE.txt',
-    description='My personal ML library',
+    description='This module implements simple machine-learning algorithms built from scratch.',
     long_description=open('README.md').read(),
 )
