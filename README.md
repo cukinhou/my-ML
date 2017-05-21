@@ -1,11 +1,10 @@
 MyML
 ===========
-This repository contains simple Machine-learning algorithms built from scratch. The goal is to keep track of my findings and personal skills
+This repository contains simple Machine-learning algorithms built from scratch as well as tools for evaluating models (performance measures, cross-validation, tests). The goal is to keep track of my findings and personal skills
  with machine learning in python. In order to allow scalability, each algorithm implements a Classifier, Clustering or DimensionalityReduction object depending on the type of task it performs.
 
 Currently (21/05/2017) the library includes the following methods:
- * simple Perceptron classification
-
+ * Perceptron classifier and tests
 
 Usage example
 =========
@@ -33,7 +32,7 @@ Usage example
 
 Install
 =========
-If you do not have pip install run the following command:
+If you do not have pip installed in your machine, run the following command:
 * easy_install pip
 
 For installing MyML run (you might have to use sudo for super user privileges):
