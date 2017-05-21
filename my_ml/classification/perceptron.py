@@ -9,7 +9,6 @@ class Perceptron(Classifier):
     def __init__(self):
         self.weights = []
 
-    # Make a prediction with weights
     def predict(self, x):
         '''
         Predicts an output binary class (0 or 1) for a given input attribute
@@ -21,7 +20,6 @@ class Perceptron(Classifier):
         activation = self.weights[0] + np.sum(self.weights[1:] * np.array(x))
         return 1.0 if activation >= 0.0 else 0.0
 
-    # Estimate Perceptron weights using stochastic gradient descent
     def fit(self, x_train, y_train, l_rate, n_iter):
         '''
         Adapts the weigths of the perceptron model to fit the input data
