@@ -99,11 +99,10 @@ class Classifier(object):
             Keyword arguments for processing.
         Returns
         -------
-        depends on the implementation of subclass
-            Processed data.
+        depends on the implementation of subclass.
         """
         return
 
     def __call__(self, *args, **kwargs):
-        # this magic method makes a Processor callable
+        # makes Classifier callable
         return self.predict(*args, **kwargs)
