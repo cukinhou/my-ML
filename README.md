@@ -1,13 +1,6 @@
 MyML
 ===========
-MyML will implement simple machine-learning algorithms for classification and clustering, as well as model evaluation tools such as performance measures, cross-validation and tests. The goal of this repo is to keep track of my findings and personal skills with machine learning in python.
-
-Algorithms are 
-
-
-
-This repository contains simple Machine-learning algorithms built from scratch as well as tools for evaluating models (performance measures, cross-validation, tests). The goal is to keep track of my findings and personal skills
- with machine learning in python. In order to allow scalability, each algorithm implements a Classifier, Clustering or DimensionalityReduction object depending on the type of task it performs.
+MyML will implement simple machine-learning algorithms for classification and clustering, as well as model evaluation tools such as performance measures, cross-validation and tests. The goal of this repo is to keep track of my findings and personal skills with machine learning in python. In order to allow scalability, each algorithm implements a Classifier, Clustering or DimensionalityReduction object depending on the type of task it performs.
 
 Currently (21/05/2017) the library includes the following methods:
  * Perceptron or Single-layer perceptron: is an algorithm for supervised learning of binary classifiers. This kind of classifiers decide whether an input, represented by a vector of numbers, belongs to some specific class (1) or not (0). It is a type of linear classifier, which means that the classification algorithm that makes its predictions is based on a linear predictor function (activation function) combining a set of weights with the feature vector, just like in linear regression. The algorithm allows for online learning, in that it processes elements in the training set one at a time. 
