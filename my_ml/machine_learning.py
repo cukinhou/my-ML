@@ -29,7 +29,7 @@ class Classifier(object):
             infile = infile.name
         except AttributeError:
             pass
-        # instantiate a new Processor and return it
+        # instantiate a new classifier and return it
         with open(infile, 'rb') as f:
             # Python 2 and 3 behave differently
             try:
@@ -38,11 +38,11 @@ class Classifier(object):
             except TypeError:
                 # Python 2 doesn't have/need the encoding
                 obj = pickle.load(f)
-        # warn if the unpickled Processor is of other type
+        # warn if the unpickled classifier is of other type
         if obj.__class__ is not cls:
             import warnings
-            warnings.warn("Expected Processor of class '%s' but loaded "
-                          "Processor is of class '%s', processing anyways." %
+            warnings.warn("Expected classifier of class '%s' but loaded "
+                          "Classifier is of class '%s', processing anyways." %
                           (cls.__name__, obj.__class__.__name__))
         return obj
 
@@ -64,7 +64,7 @@ class Classifier(object):
             outfile = outfile.name
         except AttributeError:
             pass
-        # dump the Processor to the given file
+        # dump the Classifier to the given file
         # Note: for Python 2 / 3 compatibility reason use protocol 2
         pickle.dump(self, open(outfile, 'wb'), protocol=2)
 
@@ -82,7 +82,6 @@ class Classifier(object):
         Returns
         -------
         depends on the implementation of subclass
-            Processed data.
         """
         return
 
